@@ -24,6 +24,9 @@ main().then(()=>{
 async function main() {
     await mongoose.connect(process.env.MONGO_URI);
 }
+app.get("/", (req, res) => {
+    res.redirect("/chats");
+});
 // show data
 
 app.get("/chats", async(req, res)=>{
