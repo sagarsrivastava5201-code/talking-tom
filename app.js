@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 let app = express();
 let port = 8080;
@@ -19,8 +20,9 @@ main().then(()=>{
     console.log(err)
 });
 
+
 async function main() {
-    await mongoose.connect("mongodb+srv://sagarsrivastava5201_db_user:srivastava0225@cluster0.j1nulhv.mongodb.net/taking?appName=Cluster0");
+    await mongoose.connect(process.env.MONGO_URI);
 }
 // show data
 
@@ -43,8 +45,8 @@ app.get("/chats", async(req, res)=>{
         created_at : new Date(), 
       });
 
-      newVal.save().then((res)=>{
-        console.log(res)
+      newVal.save().then(()=>{
+        console.log("add new chats")
       }).catch((err)=>{
         console.log(err)
       })
