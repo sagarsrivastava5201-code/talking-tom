@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Each chat */
+.msg-box {
+    width: 50%;
+    max-width: 90%;
+    margin: 15px auto;
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* From and To */
+.msg-box > p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Main message */
+.main-msg {
+    background-color: #6afcae93;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.main-msg p {
+    color: #222;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.msg-box:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .msg-box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* button */
+
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form button {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #075e54;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+/* btn */
+
+.btn {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight:600;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+.btn:hover {
+    background-color: #075e54;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+
+.div {
+    display: flex;
+   gap:70%;
+    align-items: center;
+}
