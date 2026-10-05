@@ -124,6 +124,6 @@ form button:active {
 
 .div {
     display: flex;
-   gap:70%;
+   gap:10px;
     align-items: center;
 }
